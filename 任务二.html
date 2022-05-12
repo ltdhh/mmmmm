@@ -208,6 +208,7 @@
             position: relative;
             float: left;
             line-height: 46px;
+            height: 46px;
             font-size: 14px;
             margin: 0 4px;
           
@@ -334,8 +335,8 @@
 
                     
                     <li>
-                        <h5>1</h5>
-                        <span>报名试用</span>
+                         <h5>1</h5>
+                        <span>报名试用</span> 
                         <div class="xl">
                             怎样报名试用?
                             <span class="sjx"></span>
@@ -378,10 +379,10 @@
 
     <script>
        
-        $('.box-d_a ul li' ).mouseover(function(){
+        $('.box-d_a ul li' ).eq(1).hover(function(){
             var i =$(this).index()
            
-            $('.xl').eq(i).show()
+            $('.xl').eq(i).toggle()
         
         })
     </script>
