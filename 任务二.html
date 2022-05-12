@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>任务二
+
+    </title>
+    <script src="../kkkkk/JS/min.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+
+        }
+
+        .w {
+            width: 952px;
+            margin: 0 auto;
+
+        }
+
+        .max-box {
+
+            margin: 0 auto;
+            height: 198px;
+            width: 1024px;
+
+        }
+
+        .box-a {
+            overflow: hidden;
+            padding-top: 6px;
+            background-color: #fbfbfb;
+            height: 27px;
+
+
+        }
+
+        .box-a_left {
+            float: left;
+        }
+
+        .box-a_left ul {
+            overflow: hidden;
+        }
+
+        .box-a_left li {
+            float: left;
+            font-size: 12px;
+            margin-right: 6px;
+        }
+
+        .box-a_left li a {
+            color: #256eb2;
+        }
+
+        .box-a_right {
+            float: right;
+        }
+
+        .box-a_right ul {
+            overflow: hidden;
+        }
+
+        .box-a_right ul li {
+            float: right;
+            font-size: 12px;
+        }
+
+        .box-a_right ul li a {
+            color: #256eb2;
+        }
+
+        .box-a_right ul li i {
+            display: inline-block;
+            height: 10px;
+            width: 1px;
+            background-color: #2670b1;
+            margin: 0 8px;
+            vertical-align: middle;
+
+        }
+
+        /* 第二行 */
+
+        .box-b {
+            overflow: hidden;
+            padding-top: 15px;
+            height: 88px;
+        }
+
+        .box-b_left {
+            float: left;
+        }
+
+        .box-b_left img {
+            width: 450px;
+            height: 70px;
+        }
+
+        .box-right {
+            position: relative;
+            float: right;
+            width: 460px;
+            height: 67px;
+
+
+
+        }
+
+        .box-right div {
+            display: inline-block;
+            text-align: center;
+            height: 27px;
+            width: 73px;
+            line-height: 27px;
+            background-color: #f3f3f3;
+            border: 1px solid #9b9fa0;
+            border-radius: 5px;
+        }
+
+        .box-right div:nth-child(3) {
+            width: 460px;
+            height: 41px;
+            border-radius: 5px;
+        }
+
+        .box-right input {
+            position: absolute;
+            left: 5px;
+            bottom: 6px;
+            width: 365px;
+            height: 29px;
+            border: 1px solid #9b9fa0;
+            border-right: 0;
+        }
+
+        .box-right div span {
+            position: absolute;
+            right: 5px;
+            bottom: 6px;
+            height: 29px;
+            width: 85px;
+            background-color: #fd941e;
+            border: 1px solid #ff7328;
+        }
+
+        /* 第三行 */
+        .box-c_a {
+            height: 36px;
+            background-image: linear-gradient(#fca91b, #f75c00);
+            border-radius: 3px
+        }
+
+        .box-c_a ul {
+            overflow: hidden;
+            margin-left: 44px;
+        }
+
+        .box-c_a ul li {
+            float: left;
+            line-height: 36px;
+
+
+        }
+
+        .box-c_a ul li i {
+            display: inline-block;
+            height: 25px;
+            width: 2px;
+            /* background-color: #fbfbfb; */
+            vertical-align: middle;
+            margin: 0 15px;
+            background-image: linear-gradient(to right, #ffca74, #d97430);
+        }
+
+        .box-c_a ul li a {
+            color: #f3f3f3;
+
+        }
+
+        /* 第四行 */
+        .box-d {
+
+            background-color: #ffffff;
+        }
+
+        .box-d_a {
+           
+            height: 46px;
+            border: 1px solid #dfdfdf;
+            border-radius: 0 0 3px 3px;
+        }
+
+        .box-d_a ul {
+            color: #7b7b7b;
+          
+           
+        }
+
+        .box-d_a ul li {
+            position: relative;
+            float: left;
+            line-height: 46px;
+            font-size: 14px;
+            margin: 0 4px;
+          
+            
+        }
+
+        .box-d_a ul li h5 {
+            display: inline-block;
+            font-size: 19px;
+        }
+
+        /* 下拉菜单 */
+        .xl {
+
+            position: absolute;
+            top: 40px;
+            left: 0;
+            display: none;
+            font-size: 12px;
+            height: 33px;
+            width: 130px;
+            border: 1px solid #f9a358;
+            line-height: 33px;
+            text-align: center;
+            margin-right: 10px;
+
+        }
+
+        .sjx {
+            position: absolute;
+          
+            left: 47px;
+            top: -10px;
+             display: inline-block;
+            height: 0px;
+            width: 0px;
+            border: 5px solid transparent;
+            border-bottom-color: #fff;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="max-box">
+        <!-- 第一行 -->
+        <div class=" box-a w">
+            <div class="box-a_left ">
+                <ul>
+                    <li>您好，欢迎来到试客联盟!</li>
+                    <li>【 <a href="#">请登录</a> 】</li>
+                    <li>【 <a href="#">免费注册</a> 】</li>
+                </ul>
+            </div>
+            <div class="box-a_right ">
+                <ul>
+
+                    <li>
+                        <a href="#"> 帮助中心</a>
+                    </li>
+                    <li>
+                        <a href="#">试客论坛</a>
+                        <i></i>
+                    </li>
+                    <li>
+                        <a href="#">试客论坛首页</a>
+                        <i></i>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- 第二行 -->
+        <div class="box-b w">
+            <div class="box-b_left ">
+                <img src="../kkkkk/imgaes/logo.png" alt="">
+            </div>
+            <div class="box-right">
+                <div>拟销试用</div>
+                <div>所有活动</div>
+                <div>
+                    <input type="text">
+                    <span>搜索</span>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <!-- 第三行 -->
+        <div class="box-c">
+
+            <div class="box-c_a w">
+                <ul>
+                    <li><a href="#">试客联盟首页</a><i></i></li>
+                    <li><a href="#">品牌频道</a><i></i></li>
+                    <li><a href="#">666诚信频道</a><i></i></li>
+                    <li><a href="#">试用汇总</a><i></i></li>
+                    <li><a href="#">购物返利</a><i></i></li>
+                    <li><a href="#">试客空间</a><i></i></li>
+                    <li><a href="#">试客论坛</a><i></i></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- 第四行 -->
+        <div class="box-d">
+
+            <div class="box-d_a w">
+                <ul>
+                    <li>
+
+                        <h5>拟销试用流程：</h5>
+                        <div class="xl">
+                           
+                        </div>
+                    </li>
+                       
+                        
+                            
+                       
+
+                    
+                    <li>
+                        <h5>1</h5>
+                        <span>报名试用</span>
+                        <div class="xl">
+                            怎样报名试用?
+                            <span class="sjx"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <h5>2</h5>
+                        <span>审批通过</span>
+                    </li>
+                    <li>
+                        <h5>3</h5>
+                        <span>以领取码到商家网点拍下</span>
+
+                    </li>
+                    <li>
+                        <h5>4</h5>
+                        <span>完成交易流程</span>
+                    </li>
+                    <li>
+                        <h5>5</h5>
+                        <span>试用后提交试用报告</span>
+                    </li>
+                    <li>
+                        <h5>6</h5>
+                        <span>领取拟销试用金(等于交易价）</span>
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <script>
+       
+        $('.box-d_a ul li' ).mouseover(function(){
+            var i =$(this).index()
+           
+            $('.xl').eq(i).show()
+        
+        })
+    </script>
+</body>
+
+</html>
