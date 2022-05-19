@@ -1,0 +1,13 @@
+(function ($) {
+    $.fn.tabs = function (box) {
+
+        this.addClass(box.b).siblings().removeClass(box.b)
+        var i = $(this).index()
+        $(box.c).eq(i).addClass(box.d).siblings().removeClass(box.d)
+
+        return this
+
+    }
+
+
+}(jQuery))
